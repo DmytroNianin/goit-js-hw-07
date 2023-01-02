@@ -6,8 +6,6 @@ const galleryCardSet = galleryItems.map(createGalleryCard).join("");
 
 galleryRef.insertAdjacentHTML("afterbegin", galleryCardSet);
 
-galleryRef.addEventListener("click", onOpenModal);
-
 function createGalleryCard({ preview, original, description }) {
   return `<li class="gallery__item">
     <a class="gallery__link" href="${original}">
